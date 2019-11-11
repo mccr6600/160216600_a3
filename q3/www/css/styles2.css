@@ -1,0 +1,118 @@
+import url(https://fonts.googleapis.com/css?family=Merriweather);
+import url(https://fonts.googleapis.com/css?family=Proza+Libre);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Proza Libre", "Helvetica Neue";
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+
+h1 {
+  	font-family: "Merriweather", "Times New Roman";
+  	font-size: 34px;
+	word-spacing: -0.2rem
+	line-height: 1.1
+	font-color: #241c15
+}
+
+body{
+	font-family: "Proza Libre", "Helvetica Neue";
+	font-size: 14px;
+	font-color: #241c15;
+}
+
+.left-margin {
+	float: left;
+	width: 15%;
+	padding: 20px;
+}
+
+.left-column {
+  float: left;
+  width: 120px;
+  padding: 20px;
+}
+
+
+.left-column img {
+	padding-top: 35px;
+	width: 100%;
+}
+
+.middle-column {
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+
+.middle-column img {
+   width: 100%;
+}
+
+.right-column {
+  float: left;
+  padding: 20px;
+  width: 33.3%;
+}
+
+.right-column img {
+   width: 100%;
+}
+
+.left50column {
+	float: left;
+	width: 50%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.right50column {
+	float: left;
+	width: 40%;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  	font-family: "Proza Libre", "Helvetica Neue";
+	font-size: 11px
+	font-color: rgba(36,28,21,0.65);
+}
+
+input[type=submit]{
+	font-color: white;
+	font-weight: bold;
+	background-color: white;
+	active-background-color: #007c89;
+}
+
+input[type=Text], input[type=file], textarea, select{
+	width: 100%;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+/* Stack columns */
+@media (max-width: 600px) {
+  .left-column, .middle-column, .right-column {
+    width: 100%;
+    height: auto;
+  }
+}
